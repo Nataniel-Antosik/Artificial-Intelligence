@@ -68,6 +68,8 @@ y = np.zeros(10)
 for i in range(10):
     y[i] = (-(w[0]/w[1]) * x[i] - w[2]/w[1])
 plt.plot(x,y)
+plt.title('Perceptron')
+plt.savefig('Perceptron.png', dpi = 600)
 plt.show()
 print("w: ", w)
 print("algorithm execution plugs: ", k)
