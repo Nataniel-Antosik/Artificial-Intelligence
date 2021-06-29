@@ -26,7 +26,7 @@ inheritance from BaseEstimator and ClassifierMixin classes, prepare fit
 5. Data structures for storing:
 * a priori distributions of classes P(Y = y),
 * the conditional distributions P(Xj = v|Y = y).
-6. Determine the accuracy (Accuracy = NP LZ ∗ 100%, where NP - the number of samples properly classified
+6. Determine the accuracy (Accuracy = NP/LZ ∗ 100%, where NP - the number of samples properly classified
 classified in the set, LZ - the size of the set) of the obtained classifier
 on the learning and test sets.
 7. Repeat the calculation taking into account the LaPlace correction
