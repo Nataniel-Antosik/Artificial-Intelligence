@@ -12,13 +12,13 @@ def conversion(Y):
         if Y[i] == 0:
             Y[i] = -1
 
-def classification(E, Y_Blad, X, Y, w):
+def classification(E, Y_Error, X, Y, w):
     for i in range(len(X)):
         s = w[0] + w[1] * X[i,0] + w[2] * X[i,1]
         f = s > 0 and 1 or -1
         if f != Y[i]:
             E.append(X[i])
-            Y_Blad.append(Y[i])
+            Y_Error.append(Y[i])
 
 def perceptron(X, Y):
     #generating the necessary initial structures
@@ -27,28 +27,28 @@ def perceptron(X, Y):
     k = 0 #number of plugs
     eta = 0.3 # from 0 to 1
     E = []
-    Y_Blad = []
+    Y_Error = []
 
     #first classification
 
-    classification(E, Y_Blad, X, Y, w)
+    classification(E, Y_Error, X, Y, w)
 
     while(len(E) > 0):
 
         #accutalization of scales
 
-        losowy_Indeks = random.randrange(len(E))
+        random_Index = random.randrange(len(E))
         for i in range(3):
-            w[i] = w[i] + eta * Y_Blad[losowy_Indeks] * E[losowy_Indeks][i]
+            w[i] = w[i] + eta * Y_Error[random_Index] * E[random_Index][i]
 
         #Resetting the E-list
 
         E = []
-        Y_Blad = []
+        Y_Error = []
 
         #another classification with new weights
 
-        classification(E, Y_Blad, X, Y, w)
+        classification(E, Y_Error, X, Y, w)
 
         k += 1
         
