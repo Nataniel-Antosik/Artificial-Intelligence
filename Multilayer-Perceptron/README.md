@@ -90,7 +90,7 @@ Compute for the given X the output of the network with the help of _forward. Cal
 
 ### Training data
 <p align="center">
-<img src ="Training values_accuracy.png" widith="300" height="270"> <img src ="Training data_cost.png" widith="300" height="270">
+<img src ="Training values_accuracy.png" widith="300" height="270"> <img src ="Training values_cost.png" widith="300" height="270">
 </p>
 
 ## Conclusions:
