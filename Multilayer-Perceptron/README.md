@@ -71,6 +71,28 @@ def predict(self, X):
 ```
 Compute for the given X the output of the network with the help of _forward. Calculate what class was indicated and this value is returned by the method.
 
+## Results on the graph
+
+### Binary data
+<p align="center">
+<img src ="Binary data_accuracy.png" widith="300" height="270"> <img src ="Binary data_cost.png" widith="300" height="270">
+</p>
+
+### Normalized data
+<p align="center">
+<img src ="Normalized data_accuracy.png" widith="300" height="270"> <img src ="Normalized data_cost.png" widith="300" height="270">
+</p>
+
+### Test data
+<p align="center">
+<img src ="Test data_accuracy.png" widith="300" height="270"> <img src ="Test data_cost.png" widith="300" height="270">
+</p>
+
+### Training data
+<p align="center">
+<img src ="Training values_accuracy.png" widith="300" height="270"> <img src ="Training data_cost.png" widith="300" height="270">
+</p>
+
 ## Conclusions:
 * Classification of data taken from iris for training and testing data is very similar
 * Classification of binary data once had an increase in data for cost and a slight decrease for accuracy
