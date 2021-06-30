@@ -22,9 +22,9 @@ from sklearn.datasets import fetch_openml
 X_iris, y_iris = fetch_openml(name="iris", version=1, return_X_y=True)
 ```
 2. The loaded set has as output a vector containing data of type str of dimension [number samples, 1]. It needs to be transformed into an array of size [number of samples, number of classes], where
-* 'Iris-setosa' –> [1. 0. 0.],
+* 'Iris-setosa'     –> [1. 0. 0.],
 * 'Iris-versicolor' –> [0. 1. 0.],
-* 'Iris-virginica' –> [0. 0. 1.].
+* 'Iris-virginica'  –> [0. 0. 1.].
 3. Make a distinction between the teaching set and the testing set
 ```
 from sklearn.model_selection import train_test_split
