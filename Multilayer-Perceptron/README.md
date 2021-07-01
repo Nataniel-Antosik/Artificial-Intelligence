@@ -11,7 +11,7 @@ The following diagram shows the backpropagation teaching assumptions
 Author: Christian Borgelt
 
 ## Technologies
-Programs is created with:
+Program is created with:
 * Python
 
 ## Next points in the algorithm
