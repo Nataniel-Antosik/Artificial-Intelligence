@@ -24,7 +24,7 @@ end while
 return P(best), evaluate(P(best))
 ```
 ## Technologies
-Programs is created with:
+Program is created with:
 * Python
 
 ## Description of the algorithm
