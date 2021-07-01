@@ -10,7 +10,7 @@ which may be needed as factors in formula.
 Identifying probabilities with the frequencies occurring in the learning set.
 
 ## Technologies
-Programs is created with:
+Program is created with:
 * Python
 
 ## First step
