@@ -2,7 +2,7 @@ import numpy as np
 import random as rm
 import matplotlib.pyplot as plt
 
-class Ewolution:
+class Evolution:
     def __init__(self):
         # Values:
         self.n = 10
@@ -186,6 +186,6 @@ class Ewolution:
 
 if __name__== '__main__':
 
-    e = Ewolution()
+    e = Evolution()
     [P_best, evaluate_best, gen] = e.evolutionary()
     print("Best population: ", P_best, "best value evaluate: ", evaluate_best, "Number of generations: ", gen)
