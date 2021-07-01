@@ -4,7 +4,7 @@
 In computational intelligence (CI), an evolutionary algorithm (EA) is a subset of evolutionary computation, a generic population-based metaheuristic optimization algorithm. An EA uses mechanisms inspired by biological evolution, such as reproduction, mutation, recombination, and selection. Candidate solutions to the optimization problem play the role of individuals in a population, and the fitness function determines the quality of the solutions (see also loss function). Evolution of the population then takes place after the repeated application of the above operators. LINK: https://en.wikipedia.org/wiki/Evolutionary_algorithm
 
 ### Program info
-The program is an implementation of an evolutionary algorithm for finding a solution for n-hetmans (The eight queens puzzle is the problem of placing eight chess queens on an 8×8 chessboard so that no two queens threaten each other.). 
+The program is an implementation of an evolutionary algorithm for finding a solution for n-queens (The eight queens puzzle is the problem of placing eight chess queens on an 8×8 chessboard so that no two queens threaten each other.). 
 
 ## Evolutionary Algorithm Pseudocode 
 ```
@@ -28,9 +28,9 @@ Program is created with:
 * Python
 
 ## Description of the algorithm
-* Each individual represents an array of n-hetmans. An individual is a vector of length n. The interpretation of an individual is as follows: the index in the vector, is the x-coordinate and the value in the vector is the y-coordinate.
-* <b>P</b> population (set of potential settings of hetmans on a chessboard) - an array with a given number of pop individuals.
-* <b>P0</b> is the initial population, which is a pop-size array with n-hetmans whose positions are random - (perform randomization by drawing permutations from n).
+* Each individual represents an array of n-queens. An individual is a vector of length n. The interpretation of an individual is as follows: the index in the vector, is the x-coordinate and the value in the vector is the y-coordinate.
+* <b>P</b> population (set of potential settings of queens on a chessboard) - an array with a given number of pop individuals.
+* <b>P0</b> is the initial population, which is a pop-size array with n-queens whose positions are random - (perform randomization by drawing permutations from n).
 * <b>evaluate(P)</b> computes an adaptation function for the n-hemtans problem that returns the number of attacks.
 * <b>best</b> - the index of the best individual in the population P
 * <b>Pn</b> is the new population after selection
@@ -51,7 +51,7 @@ while i < pop do
 end while
 ```
 
-* <b>ffMAX</b> is the expected value of the adaptation/utility function for the solution. For the n-hetman problem, it is the smallest number of attacks, that is 0.
+* <b>ffMAX</b> is the expected value of the adaptation/utility function for the solution. For the n-queens problem, it is the smallest number of attacks, that is 0.
 * <b>genmax</b> - maximum number of evolutionary algorithm steps (generation) 1000
 * <b>crossover(Pn)</b> function changes individuals by exchanging information contained in two randomly selected individuals.
 
