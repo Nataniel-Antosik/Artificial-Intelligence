@@ -12,7 +12,7 @@ larger networks.
 </p>
 
 ## Technologies
-Programs is created with:
+Program is created with:
 * Python
 
 ## Next points in the algorithm
